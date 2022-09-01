@@ -1,0 +1,65 @@
+$main-font-color: darkslategray;
+$main-background-color: aliceblue;
+
+html {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+body, #__nuxt, #__layout {
+  flex-grow: 1;
+  background-color: $main-background-color;
+  font-family: "Alumni Sans";
+  min-height: 100%;
+  display: flex;
+  color: $main-font-color;
+}
+
+.title-section {
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  display: flex;
+  flex-flow: column;
+  .title {
+    font-size: 100px;
+    line-height: 0.62;
+    .moved-name {
+      margin-left: 1.83rem;
+    }
+  }
+  .subtitle {
+    font-size: 1.5rem;
+    letter-spacing: 0.5rem;
+  }
+  .link-bar {
+    flex-flow: row;
+    display: flex;
+    svg {
+      margin: 0.5rem;
+      color: gray;
+      transition: color 0.2s;
+      &:hover {
+        color: $main-font-color;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@font-face {
+  font-family: "Alumni Sans";
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: url("~/assets/fonts/AlumniSansPinstripe-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Alumni Sans";
+  font-style: italic;
+  font-weight: normal;
+  font-display: swap;
+  src: url("~/assets/fonts/AlumniSansPinstripe-Italic.ttf");
+}
