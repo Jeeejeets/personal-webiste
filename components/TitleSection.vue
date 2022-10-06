@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full title-section h-full">
+  <div class="section title-section">
     <div class="title">
       <p>
         Dawid

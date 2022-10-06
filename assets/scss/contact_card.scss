@@ -1,0 +1,28 @@
+.contact-card-container {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: space-around;
+}
+
+.contact-card {
+  width: 10em;
+  height: 10em;
+  background-color: dimgray;
+  margin: 2em;
+  padding: 1em;
+  border-radius: 1em;
+
+  .contact-card-title {
+
+  }
+
+  .contact-card-image {
+    height: 100px;
+    img {
+      margin-left: auto;
+      margin-right: auto;
+      height: 100%;
+    }
+  }
+}
