@@ -1,28 +1,46 @@
-.contact-card-container {
+.contact-card-line {
   display: flex;
   flex-direction: row;
-  align-items: stretch;
   justify-content: space-around;
+  flex-wrap: wrap;
+  .contact-card-url {
+    display: none;
+  }
+}
+
+.contact-card-line-highlighted {
+  @media screen and (min-width: $medium-device-width) {
+    font-size: 1.2em;
+  }
+  svg {
+    height: 2em;
+    width: 2em;
+  }
+  .contact-card-url {
+    display: initial;
+  }
+  .contact-card-title {
+    display: none;
+  }
 }
 
 .contact-card {
-  width: 10em;
-  height: 10em;
-  background-color: dimgray;
-  margin: 2em;
-  padding: 1em;
   border-radius: 1em;
+  text-align: center;
 
   .contact-card-title {
-
+    text-align: center;
   }
 
   .contact-card-image {
-    height: 100px;
-    img {
+    color: gray;
+    svg {
       margin-left: auto;
       margin-right: auto;
-      height: 100%;
+      transition: color 0.2s;
+      &:hover {
+        color: white;
+      }
     }
   }
 }

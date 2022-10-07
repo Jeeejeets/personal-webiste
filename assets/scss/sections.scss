@@ -73,7 +73,28 @@
 .section-content-container {
   font-family: sans-serif;
   font-size: 1.2rem;
-  margin-top: 2rem;
+  margin-top: $section-container-top-margin;
   padding-left: 1rem;
   max-width: 100%;
+}
+
+.contact-section {
+  background: #333;
+  color: $secondary-font-color;
+  .container {
+    height: calc(100% - $section-container-top-margin);
+    .section-content-container {
+      display: flex;
+      height: 100%;
+      flex-flow: column;
+      justify-content: space-between;
+    }
+  }
+}
+
+// FIXME this should not be here
+.footnote {
+  font-size: 0.75em;
+  text-align: center;
+  margin-bottom: 1rem;
 }
