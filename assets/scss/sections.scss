@@ -3,7 +3,7 @@
   max-width: 100%;
   overflow-x: hidden;
   position: relative;
-  &:nth-child(odd) {
+  &:nth-child(even) {
     background: url("static/background_pattern.svg");
     background-color: $secondary-background-color;
     color: $secondary-font-color;
