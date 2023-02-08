@@ -1,9 +1,6 @@
 <template>
   <div class="root">
-    <UpperNavbar/>
     <TitleSection/>
-    <WhoamiSection/>
-    <ContactSection />
   </div>
 </template>
 
